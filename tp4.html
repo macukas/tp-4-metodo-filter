@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <script>
+
+        document.write(("<br>----------------------punto 1--------------------------<br>"));
+
+        var precios=[100,200,300,400,500];
+        var precios2=precios.map(precio => precio+(precio*15)/100);
+        document.write(precios2.join("<br>"));
+        console.log(precios2)
+
+        document.write(("<br>----------------------punto 2--------------------------<br>"));
+
+        var precios=[100,200,300,400,500];
+        var precios2=precios.map(precio => precio+(precio*15)/100);
+        var punto2 = precios2.filter((precios)=>precios == 230);
+        document.write(punto2.join("<br>"));
+        console.log(punto2)
+
+        document.write(("<br>----------------------punto 3--------------------------<br>"));
+
+        var precios=[100,200,300,400,500];
+        var precios2=precios.map(precio => precio+(precio*15)/100);
+        var entre = precios2.filter((precios)=>precios>=300 && precios<=500);
+        document.write(entre.join("<br>"));
+        console.log(entre)
+
+        document.write(("<br>----------------------punto 4--------------------------<br>"));
+
+        var precios=[100,200,300,400,500];
+        var precios2=precios.map(precio => precio+(precio*15)/100);
+        var mayor = precios2.filter((precios)=>precios>400);
+        document.write(mayor.join("<br>"));
+        console.log(entre)
+
+        document.write(("<br>----------------------punto 5--------------------------<br>"));
+
+        var precios=[100,200,300,400,500];
+        var precios2=precios.map(precio => precio+(precio*15)/100);
+        var menor = precios2.filter((precios)=>precios<200);
+        document.write(menor.join("<br>"));
+        console.log(menor)
+
+        document.write(("<br>----------------------punto 6--------------------------<br>"));
+
+        var precios=[100,200,300,400,500];
+        var precios2=precios.map(precio => precio+(precio*15)/100);
+        var diff = precios2.filter((precios)=>precios!=345);
+        document.write(diff.join("<br>"));
+        console.log(diff)
+
+        document.write(("<br>----------------------punto 7--------------------------<br>"));
+
+        var precios=[100,200,300,400,500];
+        var precios2=precios.map(precio => precio+(precio*15)/100);
+        var diff2 = precios2.filter((precios)=>precios!=460);
+        document.write(diff2.join("<br>"));
+        console.log(diff2)
+
+        document.write(("<br>----------------------punto 8--------------------------<br>"));        
+
+        var precios=[100,200,300,400,500];
+        var precios2=precios.map(precio => precio+(precio*15)/100);
+        var masmenos = precios2.filter((precios)=>precios>500 || precios<200 );
+        document.write(masmenos.join("<br>"));
+        console.log(masmenos)
+
+        document.write(("<br>----------------------punto 9--------------------------<br>")); 
+
+        var precios=[100,200,300,400,500];
+        var precios2=precios.map(precio => precio+(precio*15)/100);
+        var iguales = precios2.filter((precios)=>precios == 345);
+        document.write(iguales.join("<br>"));
+        console.log(iguales)
+
+    </script>
+
+</body>
+
+</html>
